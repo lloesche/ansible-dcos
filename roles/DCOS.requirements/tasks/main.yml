@@ -49,6 +49,7 @@
     - curl
     - ipset
     - jq # not technically required by DC/OS but by this Ansible role for checks
+    - aria2 # used for p2p downloads
 
 - name: "SELinux '{{ dcos['selinux_mode'] | default('permissive') }}'"
   selinux:
